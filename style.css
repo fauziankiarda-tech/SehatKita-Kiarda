@@ -295,6 +295,7 @@ nav ul a.cta:hover {
     color: #fff;
     font-size: 28px;
     cursor: pointer;
+    align-items: center;
 }
 
 #home {
@@ -463,6 +464,9 @@ nav ul a.cta:hover {
     box-shadow: 0 12px 30px rgba(0,0,0,.25);
     animation: naik 4s ease-in-out infinite;
     z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .c1 {
@@ -597,12 +601,14 @@ nav ul a.cta:hover {
     margin-bottom: 16px;
     transition: .4s;
     position: relative;
+    color: var(--teal);
 }
 
 .kartu:hover .ikon {
     transform: rotate(-8deg) scale(1.1);
     background: var(--tua);
     border-color: var(--emas);
+    color: var(--emas2);
     box-shadow: 0 10px 24px rgba(13,47,46,.3);
 }
 
@@ -1024,4 +1030,489 @@ tr:hover td {
     margin-bottom: 12px;
     overflow: hidden;
     transition: .3s;
-    box-shadow: 0 4px 1
+    box-shadow: 0 4px 16px rgba(0,0,0,.03);
+}
+
+.faq details:hover {
+    border-color: var(--emas);
+}
+
+.faq summary {
+    list-style: none;
+    padding: 18px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--tua);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq summary::after {
+    content: "+";
+    font-size: 24px;
+    color: var(--emas);
+    transition: .3s;
+    flex-shrink: 0;
+}
+
+.faq details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.faq details p {
+    padding: 0 24px 18px;
+    font-size: 14px;
+    color: #6c807f;
+    font-weight: 300;
+}
+
+#testimoni {
+    background:
+        radial-gradient(circle at 10% 20%, rgba(201,164,92,.12), transparent 45%),
+        radial-gradient(circle at 90% 80%, rgba(31,122,114,.18), transparent 50%),
+        var(--tua);
+    color: #fff;
+}
+
+#testimoni h2.judul {
+    color: #fff;
+}
+
+.testi {
+    margin-top: 36px;
+}
+
+.testi .kartu {
+    background: rgba(255,255,255,.05);
+    border-color: rgba(255,255,255,.12);
+    backdrop-filter: blur(8px);
+}
+
+.testi .kartu:hover {
+    background: rgba(255,255,255,.09);
+    border-color: rgba(227,201,143,.4);
+}
+
+.testi .kartu p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.testi .s {
+    color: var(--emas2);
+    display: flex;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.testi h4 {
+    color: var(--emas2);
+}
+
+.testi small {
+    color: var(--sage);
+}
+
+footer {
+    background: #081f1e;
+    color: #b9cbc7;
+    padding: 50px 0 18px;
+    font-size: 14px;
+    border-top: 1px solid rgba(201,169,110,.15);
+}
+
+.fg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+footer h3 {
+    color: var(--emas2);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.cp {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    font-size: 12px;
+}
+
+.top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--emas);
+    color: var(--tua);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 40;
+    transition: .3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+}
+
+.top:hover {
+    transform: translateY(-4px);
+    background: var(--emas2);
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+        width: 1250px;
+    }
+
+    .hero {
+        gap: 70px;
+    }
+
+    .kaca {
+        height: 480px;
+    }
+
+    .hero h1 {
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .wrapper {
+        max-width: 94%;
+    }
+
+    nav ul a {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+
+    .hero {
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .kaca {
+        height: 360px;
+    }
+
+    .kat {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 820px) {
+    section {
+        padding: 70px 0;
+    }
+
+    nav .wrapper {
+        height: 76px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        background: rgba(13,47,46,.98);
+        backdrop-filter: blur(14px);
+        flex-direction: column;
+        padding: 15px 0 22px;
+        display: none;
+        gap: 10px;
+        box-shadow: 0 14px 30px rgba(0,0,0,.3);
+    }
+
+    .tog:checked ~ ul {
+        display: flex;
+    }
+
+    nav ul a {
+        display: block;
+        font-size: 14px;
+        padding: 9px 20px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .hero p {
+        max-width: 600px;
+    }
+
+    .kaca {
+        height: 400px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .lingkar {
+        inset: 25px 35px;
+    }
+
+    .stat {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -45px;
+    }
+
+    .grid3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info2,
+    .bawah {
+        grid-template-columns: 1fr;
+    }
+
+    .bk {
+        grid-template-columns: 1fr;
+    }
+
+    .peta {
+        min-height: 380px;
+    }
+
+    .peta iframe {
+        min-height: 380px;
+    }
+
+    .fg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn.o {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        max-width: 90%;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    h2.judul {
+        font-size: 29px;
+    }
+
+    .sub {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    #home {
+        min-height: auto;
+        padding-top: 125px;
+        padding-bottom: 85px;
+    }
+
+    .hero {
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero small {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .hero .btn {
+        padding: 13px 23px;
+        font-size: 13px;
+    }
+
+    .btn.o {
+        margin: 12px 0 0;
+    }
+
+    .kaca {
+        height: 330px;
+        width: 100%;
+    }
+
+    .lingkar {
+        inset: 20px 10px;
+    }
+
+    .ph img {
+        object-position: center 15%;
+    }
+
+    .chip {
+        padding: 10px 13px;
+        font-size: 11px;
+        border-radius: 12px;
+    }
+
+    .c1 {
+        top: 5px;
+        left: 0;
+    }
+
+    .c2 {
+        bottom: 20px;
+        right: 0;
+    }
+
+    .c3 {
+        top: 55%;
+        left: -5px;
+    }
+
+    .stat {
+        gap: 14px;
+        margin-top: -30px;
+    }
+
+    .stat div {
+        padding: 22px 8px;
+        border-radius: 20px;
+    }
+
+    .stat b {
+        font-size: 30px;
+    }
+
+    .stat span {
+        font-size: 12px;
+    }
+
+    .grid3 {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .kartu {
+        padding: 26px 22px;
+    }
+
+    .kat {
+        grid-template-columns: 1fr;
+    }
+
+    .blok {
+        padding: 22px 18px;
+    }
+
+    .blok h3 {
+        font-size: 20px;
+    }
+
+    .meter {
+        margin-top: 25px;
+    }
+
+    .foto {
+        width: 145px;
+        height: 145px;
+    }
+
+    .dua {
+        grid-template-columns: 1fr;
+    }
+
+    .slot {
+        gap: 7px;
+    }
+
+    .slot label {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+
+    .peta,
+    .peta iframe {
+        min-height: 320px;
+    }
+
+    .faq summary {
+        padding: 16px 18px;
+        font-size: 14px;
+    }
+
+    .faq details p {
+        padding: 0 18px 16px;
+    }
+
+    .fg {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .top {
+        width: 42px;
+        height: 42px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero h1 {
+        font-size: 33px;
+    }
+
+    .hero .btn {
+        display: block;
+        width: fit-content;
+        margin: 10px 0;
+    }
+
+    .kaca {
+        height: 280px;
+    }
+
+    .chip {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+
+    .stat b {
+        font-size: 26px;
+    }
+
+    h2.judul {
+        font-size: 25px;
+    }
+}
