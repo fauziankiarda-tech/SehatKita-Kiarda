@@ -14,7 +14,13 @@
  <div class="wrapper">
   <a href="#home" class="logo">Sehat<span>Kita</span></a>
   <input type="checkbox" id="tog" class="tog">
-  <label for="tog" class="burger">☰</label>
+  <label for="tog" class="burger" aria-label="Menu">
+   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="3" y1="6" x2="21" y2="6"></line>
+    <line x1="3" y1="12" x2="21" y2="12"></line>
+    <line x1="3" y1="18" x2="21" y2="18"></line>
+   </svg>
+  </label>
   <ul>
    <li><a href="#home">Beranda</a></li>
    <li><a href="#layanan">Layanan</a></li>
@@ -35,14 +41,19 @@
    <a href="#janji" class="btn">Buat Janji Temu</a><a href="#layanan" class="btn o">Jelajahi Layanan</a>
   </div>
   <div class="kaca">
-  <div class="lingkar ph">
+   <div class="lingkar ph">
     <img src="arda.jpg" alt="Dokter SehatKita">
    </div>
-    
-<input type="file" id="pilihFoto" accept="image/*" hidden>
-   <div class="chip c1">❤️ Detak jantung normal</div>
-   <div class="chip c2">🌿 Konsultasi online 24 jam</div>
-   <div class="chip c3">⭐ 4,9 dari pasien</div>
+   <input type="file" id="pilihFoto" accept="image/*" hidden>
+   <div class="chip c1">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="#e25555"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> Detak jantung normal
+   </div>
+   <div class="chip c2">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1b5e5a" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg> Konsultasi online 24 jam
+   </div>
+   <div class="chip c3">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="#c9a96e"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4,9 dari pasien
+   </div>
   </div>
  </div>
 </section>
@@ -60,12 +71,54 @@
   <h2 class="judul">Perawatan Lengkap untuk Semua</h2><div class="garis"></div>
   <p class="sub">Layanan kesehatan yang lengkap untuk seluruh anggota keluarga.</p>
   <div class="grid3">
-   <div class="kartu"><div class="ikon">🩺</div><h3>Pemeriksaan Umum</h3><p>Cek kesehatan rutin dan konsultasi keluhan harian.</p><ul><li>Cek tekanan darah & suhu</li><li>Konsultasi keluhan harian</li><li>Surat keterangan sehat</li></ul></div>
-   <div class="kartu"><div class="ikon">🦷</div><h3>Gigi & Mulut</h3><p>Perawatan gigi lengkap untuk senyum yang sehat.</p><ul><li>Scaling karang gigi</li><li>Tambal & cabut gigi</li><li>Pemutihan gigi</li></ul></div>
-   <div class="kartu"><div class="ikon">👶</div><h3>Ibu & Anak</h3><p>Imunisasi, tumbuh kembang, dan kehamilan.</p><ul><li>Imunisasi lengkap</li><li>USG kehamilan</li><li>Pantau tumbuh kembang</li></ul></div>
-   <div class="kartu"><div class="ikon">🧪</div><h3>Laboratorium</h3><p>Tes darah dan skrining dengan hasil akurat.</p><ul><li>Gula darah & kolesterol</li><li>Tes darah lengkap</li><li>Hasil dikirim ke WhatsApp</li></ul></div>
-   <div class="kartu"><div class="ikon">🥗</div><h3>Konsultasi Gizi</h3><p>Rencana makan seimbang sesuai kebutuhan.</p><ul><li>Rencana menu mingguan</li><li>Program berat badan</li><li>Gizi ibu hamil & anak</li></ul></div>
-   <div class="kartu"><div class="ikon">🧘</div><h3>Kesehatan Mental</h3><p>Ruang aman untuk bercerita dan menenangkan diri.</p><ul><li>Konsultasi stres & cemas</li><li>Latihan relaksasi</li><li>Pendampingan jangka panjang</li></ul></div>
+   <div class="kartu">
+    <div class="ikon">
+     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+    </div>
+    <h3>Pemeriksaan Umum</h3>
+    <p>Cek kesehatan rutin dan konsultasi keluhan harian.</p>
+    <ul><li>Cek tekanan darah & suhu</li><li>Konsultasi keluhan harian</li><li>Surat keterangan sehat</li></ul>
+   </div>
+   <div class="kartu">
+    <div class="ikon">
+     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5c-1.5-2-4.5-2.5-6.5-.5-2 2-1.5 5.5-.5 8.5.8 2.4 1.5 6.5 3.5 6.5 1.5 0 2-3.5 3.5-3.5s2 3.5 3.5 3.5c2 0 2.7-4.1 3.5-6.5 1-3 1.5-6.5-.5-8.5-2-2-5-1.5-6.5.5Z"/></svg>
+    </div>
+    <h3>Gigi & Mulut</h3>
+    <p>Perawatan gigi lengkap untuk senyum yang sehat.</p>
+    <ul><li>Scaling karang gigi</li><li>Tambal & cabut gigi</li><li>Pemutihan gigi</li></ul>
+   </div>
+   <div class="kartu">
+    <div class="ikon">
+     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+    </div>
+    <h3>Ibu & Anak</h3>
+    <p>Imunisasi, tumbuh kembang, dan kehamilan.</p>
+    <ul><li>Imunisasi lengkap</li><li>USG kehamilan</li><li>Pantau tumbuh kembang</li></ul>
+   </div>
+   <div class="kartu">
+    <div class="ikon">
+     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6.5L4.5 19a1.5 1.5 0 0 0 1.3 2.2h12.4a1.5 1.5 0 0 0 1.3-2.2L14 9.5V3"/><path d="M7 15h10"/></svg>
+    </div>
+    <h3>Laboratorium</h3>
+    <p>Tes darah dan skrining dengan hasil akurat.</p>
+    <ul><li>Gula darah & kolesterol</li><li>Tes darah lengkap</li><li>Hasil dikirim ke WhatsApp</li></ul>
+   </div>
+   <div class="kartu">
+    <div class="ikon">
+     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2h8V6a4 4 0 0 0-4-4Z"/><path d="M4 11h16a8 8 0 0 1-16 0Z"/><path d="M9 19h6"/></svg>
+    </div>
+    <h3>Konsultasi Gizi</h3>
+    <p>Rencana makan seimbang sesuai kebutuhan.</p>
+    <ul><li>Rencana menu mingguan</li><li>Program berat badan</li><li>Gizi ibu hamil & anak</li></ul>
+   </div>
+   <div class="kartu">
+    <div class="ikon">
+     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+    </div>
+    <h3>Kesehatan Mental</h3>
+    <p>Ruang aman untuk bercerita dan menenangkan diri.</p>
+    <ul><li>Konsultasi stres & cemas</li><li>Latihan relaksasi</li><li>Pendampingan jangka panjang</li></ul>
+   </div>
   </div>
  </div>
 </section>
@@ -156,9 +209,21 @@
   <h2 class="judul">Dokter yang Ramah & Berpengalaman</h2><div class="garis"></div>
   <p class="sub">Tim dokter kami siap mendampingi Anda dengan sabar dan penuh perhatian.</p>
   <div class="grid3">
-   <div class="kartu dok"><div class="foto ph"><img src="3.jpg" alt="dr. Anindya Putri"></div><small>DOKTER UMUM</small><h3>dr. Anindya Putri</h3><p>12 tahun pengalaman</p><a href="#janji" class="lebih">Buat Janji →</a></div>
-   <div class="kartu dok"><div class="foto ph"><img src="2.jpg" alt="dr. Raka Pratama"></div><small>SPESIALIS ANAK</small><h3>dr. Raka Pratama</h3><p>9 tahun pengalaman</p><a href="#janji" class="lebih">Buat Janji →</a></div>
-   <div class="kartu dok"><div class="foto ph"><img src="arda.jpg" alt="dr. Kiarda F."></div><small>AHLI GIZI</small><h3>dr. Kiarda F.</h3><p>7 tahun pengalaman</p><a href="#janji" class="lebih">Buat Janji →</a></div>
+   <div class="kartu dok">
+    <div class="foto ph"><img src="3.jpg" alt="dr. Anindya Putri"></div>
+    <small>DOKTER UMUM</small><h3>dr. Anindya Putri</h3><p>12 tahun pengalaman</p>
+    <a href="#janji" class="lebih">Buat Janji <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+   </div>
+   <div class="kartu dok">
+    <div class="foto ph"><img src="2.jpg" alt="dr. Raka Pratama"></div>
+    <small>SPESIALIS ANAK</small><h3>dr. Raka Pratama</h3><p>9 tahun pengalaman</p>
+    <a href="#janji" class="lebih">Buat Janji <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+   </div>
+   <div class="kartu dok">
+    <div class="foto ph"><img src="arda.jpg" alt="dr. Kiarda F."></div>
+    <small>AHLI GIZI</small><h3>dr. Kiarda F.</h3><p>7 tahun pengalaman</p>
+    <a href="#janji" class="lebih">Buat Janji <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+   </div>
   </div>
  </div>
 </section>
@@ -191,6 +256,86 @@
      <input type="radio" name="jam" id="j6" value="16.00"><label for="j6">16.00</label>
     </div>
     <textarea name="keluhan" placeholder="Keluhan atau catatan khusus"></textarea>
+    <button class="btn" type="submit">Kirim Janji Temu</button>
+   </form>
+   <div class="peta"><iframe src="https://maps.google.com/maps?q=Puskesmas%20Mentikan%20Cakar%20Ayam%20Mojokerto&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="wrapper">
+  <span class="eyebrow">Pertanyaan</span>
+  <h2 class="judul">Yang Sering Ditanyakan</h2><div class="garis"></div>
+  <div class="faq">
+   <details><summary>Apakah harus membuat janji terlebih dahulu?</summary><p>Disarankan agar Anda tidak menunggu lama, namun pasien tanpa janji tetap kami layani sesuai antrean.</p></details>
+   <details><summary>Apakah menerima BPJS?</summary><p>Ya, kami menerima BPJS Kesehatan dan beberapa asuransi swasta. Bawa kartu dan identitas Anda.</p></details>
+   <details><summary>Berapa lama hasil laboratorium keluar?</summary><p>Sebagian besar hasil tersedia dalam 1-3 jam, dan dapat dikirim lewat WhatsApp.</p></details>
+   <details><summary>Apakah ada konsultasi online?</summary><p>Ada. Konsultasi lewat chat dan video tersedia setiap hari pada jam operasional.</p></details>
+  </div>
+ </div>
+</section>
+
+<section id="testimoni">
+ <div class="wrapper">
+  <span class="eyebrow">Testimoni</span>
+  <h2 class="judul">Cerita dari Pasien Kami</h2><div class="garis"></div>
+  <div class="grid3 testi">
+   <div class="kartu">
+    <div class="s">
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+    <p>&ldquo;Dokternya sabar dan ramah, anak saya yang takut disuntik jadi tenang. Klinik yang bersih dan nyaman.&rdquo;</p>
+    <h4>Moana Michell</h4><small>Pasien Ibu & Anak</small>
+   </div>
+   <div class="kartu">
+    <div class="s">
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+    <p>&ldquo;Konsultasi gizinya sangat membantu. Berat badan turun dengan sehat dan saya jauh lebih bertenaga.&rdquo;</p>
+    <h4>Mike Hamell</h4><small>Pasien Konsultasi Gizi</small>
+   </div>
+   <div class="kartu">
+    <div class="s">
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+    <p>&ldquo;Daftar online mudah, antrean cepat, dan hasil lab langsung masuk ke WhatsApp. Sangat praktis.&rdquo;</p>
+    <h4>Rina Safitri</h4><small>Pasien Laboratorium</small>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrapper">
+  <div class="fg">
+   <div><h3>Hubungi Kami</h3>Lokasi: Klinik Mojokerto<br>WA: 08111122234<br>sehatkita@gmail.com</div>
+   <div><h3>SehatKita</h3>Klinik Kesehatan SMK Negeri 2 Mojokerto<br>Sehat itu investasi terbaik</div>
+   <div><h3>Jam Buka</h3>Senin - Sabtu: 08.00 - 20.00<br>UGD: 24 jam</div>
+  </div>
+  <div class="cp">&copy; 2026 All Rights Reserved By rpl_skaneda</div>
+ </div>
+</footer>
+
+<a href="#home" class="top" aria-label="Kembali ke atas">
+ <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</a>
+
+</body>
+                                                                                                                                                                                </html>
+     ea>
     <button class="btn" type="submit">Kirim Janji Temu</button>
    </form>
    <div class="peta"><iframe src="https://maps.google.com/maps?q=Puskesmas%20Mentikan%20Cakar%20Ayam%20Mojokerto&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen></iframe></div>
